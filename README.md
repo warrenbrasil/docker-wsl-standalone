@@ -8,7 +8,7 @@ Essa iniciativa parte como alternativa ao docker desktop que passou a ser pago.
 
 ## Instalando o WSL Ubuntu
 
-Para instalr o WSL no Windows, é sugerido seguir os passos da [documentação da própria Microsoft](https://docs.microsoft.com/pt-br/windows/wsl/install). 
+Para instalar o WSL no Windows, é sugerido seguir os passos da [documentação da própria Microsoft](https://docs.microsoft.com/pt-br/windows/wsl/install). 
 
 **Para utilizar o docker é necessário estar com o [WSL na versão 2](https://docs.microsoft.com/pt-br/windows/wsl/install#upgrade-version-from-wsl-1-to-wsl-2).**
 
