@@ -14,7 +14,9 @@ Para instalr o WSL no Windows, é sugerido seguir os passos da [documentação d
 
 Listando todas as distribuições instaladas e suas versões de WSL:
 
-`wsl -l --all -v`
+```bash
+wsl -l --all -v
+```
 
     Se a versão instalada de ubuntu estiver como:
     NAME      STATE           VERSION
@@ -25,15 +27,21 @@ Listando todas as distribuições instaladas e suas versões de WSL:
 
 Utilizando a versão 2 do WSL como padrão para novas instalações:
 
-`wsl --set-default-version 2`
+```bash
+wsl --set-default-version 2
+```
 
 Instalando a última versão do Ubuntu compatível com WSL:
 
-`wsl --install -d ubuntu`
+```bash
+wsl --install -d ubuntu
+```
 
 Caso seja necessário desinstalar:
 
-`wsl --unregister -d ubuntu`
+```bash
+wsl --unregister -d ubuntu
+```
 
 ## Instalando o docker
 
@@ -41,7 +49,15 @@ Depois de instalar e configurar o Ubuntu, é possível instalar o docker utiliza
 
 Estando no WSL e na raiz deste repositório, basta rodar:
 
-`./scripts/ubuntu20.04-docker-setup.sh`
+```bash
+./scripts/ubuntu20.04-docker-setup.sh
+```
+
+ou
+
+```bash
+sudo wget -O - https://raw.githubusercontent.com/warrenbrasil/docker-wsl-standalone/main/scripts/ubuntu20.04-docker-setup.sh | bash
+```
 
 Se o script executar sem erros, o docker já está instalado e pronto para o uso.
 
@@ -53,8 +69,17 @@ O docker será utilizado a partir do WSL.
 
 Toda vez que entrar no WSL e for usar o docker é necessário verificar se o serviço está rodando. Para isso:
 
-`sudo service docker status`
+```bash
+sudo service docker status
+```
 
 Se o retorno for “docker is not running” pode-se iniciar o serviço com o comando:
 
-`sudo service docker start`
+```bash
+sudo service docker start
+```
+
+Você pode também rodar o [hello-world](https://hub.docker.com/_/hello-world) para verificar a instalação
+```bash
+docker run hello-world
+```
