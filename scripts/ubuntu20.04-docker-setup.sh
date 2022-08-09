@@ -28,7 +28,7 @@ sudo apt update
 sudo apt -y install docker-ce docker-ce-cli containerd.io 
 
 # Add docker user and setup permissions
-info "Adding docker repository"
+info "Adding docker user"
 sudo groupadd docker 
 sudo usermod -aG docker $USER 
 
